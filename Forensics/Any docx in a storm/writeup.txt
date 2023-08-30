@@ -1,0 +1,4 @@
+1. Download the flag.docx file from the Last Minute CTF website
+2. Rename the downloaded file to flag.zip
+3. Unzip flag.zip
+4. Open the newly-created flag.xml file, where the flag is found: BTC{docx-is-just-a-dot-zip}

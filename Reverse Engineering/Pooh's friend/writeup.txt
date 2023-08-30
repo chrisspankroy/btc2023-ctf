@@ -1,0 +1,8 @@
+1. Download the enc.txt and RE_me.exe files from the Last Minute CTF website
+2. Open the RE_me.exe file in a disassembly tool such as Ghidra
+3. Search through the list of all functions until you find one that contains references to a "flag.txt", as seen in the attached main.png screenshot.
+4. Scroll down to the location seen in the attached function-call.png screenshot
+5. Double-click this function to view the source, which can be seen in encrypt.png
+6. Realize this function is only XORing each character of the input, which is passed in from a file that must exist "flag.txt"
+7. Open a XOR brute force tool, such as CyberChef
+8. Open the file in CyberChef, where the flag can be seen: BTC{EOR-is-always-depressed} (see attached solve.png)

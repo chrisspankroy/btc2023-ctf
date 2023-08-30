@@ -1,0 +1,5 @@
+1. Download the 4 original .txt files provided with the challenge from the Last Minute CTF 2023 website
+2. Download the 4 updated .txt files provided with the challenge from the Last Minute CTF 2023 website (the admins released updated files)
+3. Perform a diff of the original files to the updated files
+4. Notice that there are some letters missing (see attached image), which spell out "Flagequalsiiiiiiiiiieightsevenend"
+5. Wrap that string in the flag format BTC{} for a final flag of BTC{iiiiiiiiiieightsevenend}

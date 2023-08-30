@@ -1,0 +1,4 @@
+1. Download the encoded.txt file from the Last Minute CTF website
+2. Recognize the challenge name is likely a reference to a base encoding, such as base45.
+3. Use a base45 decoder, such as https://dencode.com/en/string/base45 , to decode the contents of encoded.txt by pasting it into their decoder
+4. The base45 decoder will display the flag, BTC{An.Imbalance.in.the.Poppability!}

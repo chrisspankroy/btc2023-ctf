@@ -1,0 +1,9 @@
+1. Recognize that math.random() is a reference to Javascript's math.random() function, which is not cryptographically-secure.
+2. Research predictors for math.random(), such as https://github.com/PwnFunction/v8-randomness-predictor
+3. Download the script from step 2 into bruter.py
+4. Connect to the challenge using the provided command "nc 54.163.140.212 10001"
+5. Copy the 5 numbers provided by the challenge into the script
+6. Run the script using "python3 bruter.py"
+7. The script will output the next number in the sequence (see attached screenshot)
+8. Enter the number from step 7 into the challenge
+9. The challenge will output the flag, BTC{If_you_water_water,_it_grows.}

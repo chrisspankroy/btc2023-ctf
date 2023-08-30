@@ -1,0 +1,56 @@
+This writeup will break each individual Investigation challenge into separate sections. Each section will start from the beginning, so it is clear to the reader how to begin that section.
+
+The ZIP decryption password is 18da4d3f298ed2c03b179f16b591dd7518da4d3f298ed2c03b179f16b591dd75
+Investigation I
+1. Download the Investigation-1.zip file from the Last Minute CTF 2023 website
+2. Extract everything from the ZIP file using 7zip, such as with the command: "7z x Investigation-1.zip"
+3. Open the bad_dev_user.pcap file in Wireshark
+4. Right-click the first FTP packet seen in Wireshark
+5. Select Follow -> TCP Stream
+6. The failed password can now be seen on the screen, which is also attached as a screenshot investigation1.png
+7. The flag is this failed password wrapped in BTC{}, for a final flag of BTC{BTCpassword1}
+
+Investigation I-b
+1. Download the Investigation-1.zip file from the Last Minute CTF 2023 website
+2. Extract everything from the ZIP file using 7zip, such as with the command: "7z x Investigation-1.zip"
+3. Open the bad_dev_user.pcap file in Wireshark
+4. Right-click the first FTP packet seen in Wireshark
+5. Select Follow -> TCP Stream
+6. Increment the Stream count from 0 to 1. This will switch to view the second FTP stream in the packet capture, rather than the first.
+6. The successful password can now be seen on the screen, which is also attached as a screenshot investigation-b.png
+7. The flag is this failed password wrapped in BTC{}, for a final flag of BTC{BTCpassword!}
+
+Investigation I-c
+1. Download the Investigation-1.zip file from the Last Minute CTF 2023 website
+2. Extract everything from the ZIP file using 7zip, such as with the command: "7z x Investigation-1.zip"
+3. Open the bad_dev_user.pcap file in Wireshark
+4. Select File -> Export Objects
+5. Click "Save All". This will export all files transferred over FTP
+6. Run md5sum on both files: "ms5sum DqK*.jpeg" and "md5sum The*.pdf"
+7. Try both hashes on the challenge, the MD5 hash of DqKJayFVYAEr2iZ.jpeg is the correct hash. See the attached screenshot investigation-c.png
+8. Wrap the MD5 hash in BTC{}. The final flag is BTC{564e139b32715d622f635d7e881866ad}
+
+Investigation I-d
+1. Download the Investigation-1.zip file from the Last Minute CTF 2023 website
+2. Extract everything from the ZIP file using 7zip, such as with the command: "7z x Investigation-1.zip"
+3. Open the BTCBadUser.ova file in a virtual machine program that can run it as a virtual machine, such as VirtualBox.
+4. Select "Import" 
+5. Select to import the BTCBadUser.ova file
+6. Start the imported VM
+7. Use the correct password "BTCpassword!" for the "frankb" user (taken from previous challenge Investigation I-b) if prompted
+8. Search the user's home directory for the "The BTC Story.pdf" file. Realize this file must be the second file transferred if the first file was the .jpeg file (assumed after challenge Investigation I-c)
+9. Find the file located at "/home/frankb/Documents/The BTC Story.pdf"
+10. Surround the filename with single quotes since it contains spaces
+11. Wrap the full file path in BTC for a final flag of BTC{/home/frankb/Documents/'The BTC Story.pdf'}
+
+Investigation I-e
+1. Download the Investigation-1.zip file from the Last Minute CTF 2023 website
+2. Extract everything from the ZIP file using 7zip, such as with the command: "7z x Investigation-1.zip"
+3. Open the BTCBadUser.ova file in a virtual machine program that can run it as a virtual machine, such as VirtualBox.
+4. Select "Import" 
+5. Select to import the BTCBadUser.ova file
+6. Start the imported VM
+7. Use the correct password "BTCpassword!" for the "frankb" user (taken from previous challenge Investigation I-b) if prompted
+8. Search the frankb user's entire home directory for matches of "BTC{" using the command: sudo grep -ir "BTC{" /home/frankb
+9. Print the contents of the only matching file, previous.jsonlz4, using xxd as seen in the attached screenshot investigation-e.png
+10. The final flag as seen in the screenshot is BTC{S@t0sh1_L1v3s!?}

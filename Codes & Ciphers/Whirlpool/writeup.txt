@@ -1,0 +1,24 @@
+1. Download the spiral.txt file from the Blue Team Con 2023 website
+2. Recognize that the spiral filename is likely a reference to the spiral cipher
+3. Open a spiral cipher decoder, such as https://www.dcode.fr/spiral-cipher
+4. Paste the contents of spiral.txt into the decoder and allow the brute force to run
+5. Look through the results and find the one has no holes in the middle and a double-equals sign at the end (a common sign of base64 encoding). See attached image.
+6. Paste the result into a base64 decoder
+7. The flag is present in the decoded base64 output, which can be seen below:
+
+Continuous or recurring feelings
+That you're an outside observer of your thoughts
+Feeling like you are a robot
+Or feeling like you are living in a dream or in a movie
+The sensation that you're not in control of your actions
+Including speaking
+Awareness that your sense of detachment
+Is only a feeling, and not reality
+The sense that your body, legs or arms
+Appear distorted, enlarged, or shrunken
+Feeling like you are observing yourself
+From above
+As if you were floating in the air
+BTC{TheFearofVision-TheFlashbulb.}
+
+8. The flag must have the period removed for it be accepted, making the final flag "BTC{TheFearofVision-TheFlashbulb}"

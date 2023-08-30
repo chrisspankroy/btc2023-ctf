@@ -1,0 +1,4 @@
+1. Run the command given in the challenge: "ncat 54.163.140.212 20202"
+2. Run "please access flag.txt" 
+3. The flag is output in the console (see attached image)
+4. The final flag is BTC{No-*s-4-naughty-boys!}

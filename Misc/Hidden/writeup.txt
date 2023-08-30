@@ -1,0 +1,6 @@
+1. Download the Commentary.pdf file from the CTF website
+2. On macOS, open the file in Preview (other PDF viewers also likely work)
+3. Use the search bar to search for the flag format, "BTC"
+4. The flag is shown in the search results on the sidebar, as seen in the attached image
+
+BTC{What_kind_of_PictureS?}

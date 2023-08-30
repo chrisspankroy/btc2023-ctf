@@ -1,0 +1,8 @@
+1. Download the chal.tgz file from the Last Minute CTF 2023 website
+2. Run "tar -xvf chal.tgx"
+3. Run "mkdir temp"
+4. Run "sudo extundelete --restore-all file.fs"
+5. Run "sudo chmod +x RECOVERED_FILES/lost+found/getflag"
+6. Run "./RECOVERED_FILES/lost+found/getflag"
+7. The flag is output to the console (see attached screenshot)
+8. The final flag is BTC{bal33t3d-4nd-unrun}

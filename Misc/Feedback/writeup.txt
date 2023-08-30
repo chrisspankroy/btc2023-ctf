@@ -1,0 +1,4 @@
+1. Follow the link provided in the challenge: https://forms.gle/4tC623VP7ZSNTMJf9
+2. Complete the survey
+3. The flag is output afterwards, see the attached screenshot
+4. The final flag is BTC{Thanks.for-the_feedback!}

@@ -1,0 +1,10 @@
+1. Download the chal.tgz file from the Last Minute CTF 2023 website
+2. Run "tar -xvf chal.tgx"
+3. Run "mkdir temp"
+4. On a Linux OS, "sudo mount file.fs temp/"
+5. Run "cd temp"
+6. Run "ls" to see the SSH key, blueteamcon@159.203.84.152
+7. Run "ssh -i blueteamcon@159.203.84.152 blueteamcon@159.203.84.152" to connect to the server
+8. Realize that the challenge name "root cause analysis" is a hint to the root user's history on the machine since root cause analyses are about finding out what happened (i.e. the "history" of the incident). This realization takes much trial and error
+8. Run "cat /root/.bash_history" and the flag will output (see attached screenshot)
+9. The final flag is BTC{Now_Youre_Thinking_Like_A_Hacker}

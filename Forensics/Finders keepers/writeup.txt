@@ -1,0 +1,5 @@
+1. Download the chal.tgz file from the Last Minute CTF 2023 website
+2. Run "tar -xvf chal.tgx" to extract the file.fs file
+3. Run `cat file.fs | xxd | grep -i "BTC"`
+4. The flag is output to the console (see attached screenshot)
+5. The final flag is BTC{bal33t3ed}

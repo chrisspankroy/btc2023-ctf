@@ -1,0 +1,9 @@
+1. Download the chal.tgz file from the Last Minute CTF 2023 website
+2. Run "tar -xvf chal.tgx"
+3. Run "mkdir temp"
+4. On a Linux OS, "sudo mount file.fs temp/"
+5. Run "cd temp"
+6. Run "ls" to see the SSH key, blueteamcon@159.203.84.152
+7. Run "ssh -i blueteamcon@159.203.84.152 blueteamcon@159.203.84.152" to connect to the server
+8. Run "cat .flag" and the flag will output to the screen (see attached screenshot)
+9. The final flag is BTC{SSH_AND_NO_ROOT_FILES_YET}

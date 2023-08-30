@@ -1,0 +1,10 @@
+1. Visit a crypto-help tool such as CyberChef
+2. Select the "Magic" tool. 
+3. Download the encoded.txt file from the Last Minute CTF 2023 website. The contents of this file will be referred to as the ciphertext.
+4. Paste the ciphertext into the Input box in CyberChef.
+5. Try many different cipher solvers at a decoding website such as https://www.dcode.fr/en
+6. Visit the Vigenere cipher decoder on dcode. The full URL is https://www.dcode.fr/vigenere-cipher
+7. Recognize through trial and error that the challenge name "LastMinute" is a hint to decoding the ciphertext
+8. Use "LastMinute" as the key in the decoder.
+9. Paste the ciphertext into the ciphertext section of the decoder page
+10. The plaintext will be printed: "If we hit that bullseye, the rest of the dominoes will fall like a house of cards. Checkmate. BTC{GeneralMajorWebeloZappBrannigan}"

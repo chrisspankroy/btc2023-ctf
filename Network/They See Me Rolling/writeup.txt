@@ -1,0 +1,2 @@
+1. Run the command given in the challenge description: "nc 54.163.140.212 33333"
+2. Periodically check the output for a correct flag format of BTC{} until the flag is displayed. The correct flag was BTC{A novel about Яussian Gulags.}
